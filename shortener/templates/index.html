@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>URLShortener</title>
+</head>
+<body>
+    <h2>Укорачиватель ссылок</h2>
+    <form method="post" action="createlink/">
+        {% csrf_token %}
+        <p>Ссылка:<br> <input name="link" type="url" /></p>
+        <input type="submit" value="Send" />
+    </form>
+</body>
+</html>
